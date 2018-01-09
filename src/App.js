@@ -6,7 +6,7 @@ import Previewer from './containers/Previewer/Previewer';
 class App extends Component {
   render() {
     return (
-      <div className="db">
+      <div className="db bg-washed-red h-100">
         <Header />
         <Previewer />
       </div>
