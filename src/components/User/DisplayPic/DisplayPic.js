@@ -2,9 +2,9 @@ import React from 'react';
 
 export default (props) => {
   return (
-    <div className="pa3">
+    <div className="mv3 ph2 m-25">
       <img
-        className="br-100 ba h3 w3 dib" 
+        className="br-100 ba h3 w3" 
         src={props.src} 
         alt="steramer"/>
     </div>
