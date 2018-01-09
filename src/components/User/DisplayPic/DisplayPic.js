@@ -2,7 +2,7 @@ import React from 'react';
 
 export default (props) => {
   return (
-    <div className="mv3 ph2 m-25">
+    <div className="ph2 m-25">
       <img
         className="br-100 ba h3 w3" 
         src={props.src} 
