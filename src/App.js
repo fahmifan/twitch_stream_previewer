@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import Header from './components/Header/Header';
 
+import Previewer from './containers/Previewer/Previewer';
+
 class App extends Component {
   render() {
     return (
-      <Header />
+      <div className="db">
+        <Header />
+        <Previewer />
+      </div>
     );
   }
 }
