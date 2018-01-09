@@ -5,7 +5,7 @@ import DescCard from './DescCard/DescCard';
 import pic from '../../logo.svg';
 
 export default () => (
-  <div className="w-100 flex items-center mb3">
+  <div className="w-90 pa2 flex flex-row items-center mb1 br3 shadow-4 bg-light-green">
       <DisplayPic src={pic} />
       <DescCard />
   </div>
