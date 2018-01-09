@@ -3,7 +3,7 @@ import React from 'react';
 import User from '../../components/User/User';
 
 export default () => (
-  <div>
+  <div className="w-100 flex flex-column items-center mb4">
     <User />
     <User />
     <User />
