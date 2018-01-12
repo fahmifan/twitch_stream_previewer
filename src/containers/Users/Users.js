@@ -54,18 +54,6 @@ class Users extends Component {
             url={userData.url} />
         })
       }
-  </div>
-);render() {
-    return (
-      <div className="w-70-ns w-100 center h-100 flex flex-column items-center mb4 bg-washed-red">
-      { this.state.usersData.map( (userData, index) => {
-          return <User 
-            displayPic={userData.logo}
-            display_name={userData.display_name} 
-            username={userData.name}
-            url={userData.url} />
-        })
-      }
       </div>
     );
   }
