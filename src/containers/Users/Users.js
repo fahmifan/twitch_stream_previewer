@@ -47,7 +47,8 @@ class Users extends Component {
     return (
       <div className="w-70-ns w-100 center h-100 flex flex-column items-center mb4 bg-washed-red">
       { this.state.usersData.map( (userData, index) => {
-          return <User 
+          return <User
+            key={userData._id} 
             displayPic={userData.logo}
             display_name={userData.display_name} 
             username={userData.name}
