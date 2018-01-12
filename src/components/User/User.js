@@ -28,17 +28,9 @@ class User extends Component {
   render() {
     const stream = this.state.streamData.stream;
     return (
-  <div className="w-90 pa2 flex flex-row items-center mb1 br3 shadow-4 bg-light-green">
+      <div className="w-90 pa2 flex flex-row items-center mb1 br3 shadow-4 bg-light-green">
         <DisplayPic src={this.props.displayPic} />
         <DescCard 
-          display_name={this.props.display_name}
-          username={this.props.username} 
-          url={this.props.url}
-          isOnline={stream ? true : false} 
-          game={stream && stream.game } 
-          status={stream && stream.channel.status} />
-  </div>
-);      <DescCard 
           display_name={this.props.display_name}
           username={this.props.username} 
           url={this.props.url}
