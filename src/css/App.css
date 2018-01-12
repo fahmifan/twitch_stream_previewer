@@ -1,1 +1,6 @@
 @import "tachyons"; 
+
+html {
+  height: 100%;
+  background-color: #ffdfdf;
+}
