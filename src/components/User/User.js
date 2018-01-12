@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import axios from 'axios';
 
 import DisplayPic from './DisplayPic/DisplayPic';
 import DescCard from './DescCard/DescCard';
