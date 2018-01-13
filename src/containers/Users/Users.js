@@ -20,9 +20,10 @@ class Users extends Component {
   }
 
   componentDidMount() {
+    this.loadUsers();
   }
 
-  usersData = () => {
+  loadUsers = () => {
     this.state.users.forEach(user => {
       this.getUserData(user, 'users')
         .then(res => {
