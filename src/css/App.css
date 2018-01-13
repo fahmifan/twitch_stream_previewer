@@ -1,1 +1,12 @@
 @import "tachyons"; 
+@import url('https://fonts.googleapis.com/css?family=VT323');
+@import './spinner.css';
+
+html {
+  height: 100%;
+  background-color: #ffdfdf;
+}
+
+.font-vt323 {
+  font-family: 'VT323', monospace;
+}
