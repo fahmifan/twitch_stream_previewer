@@ -6,4 +6,4 @@
 
 - [x] if a Twitch user is currently streaming, I can see additional details about what they are streaming.
 
-- [ ] Deploy to surge.sh
+- [x] Deploy to surge.sh [twitcherfcc](twitcherfcc.surge.sh "twitcherfcc")
