@@ -25,20 +25,20 @@ class Users extends Component {
 
   loadUsers = () => {
     this.state.users.forEach(user => {
-      this.getUserData(user, 'users')
+      this.getUserFromAPI(user, 'users')
         .then(res => {
           let usersData = [...this.state.usersData];
           usersData.push(res.data);
-          this.setState({usersData: usersData});
+          this.setState({usersData: usersData, isLoading: false});
         })
     })
   }
 
   /**
-   * Get a user data from a endpoint /:type/:user 
+   * Get a user data from an endpoint /:type/:user 
    * @param type : string['channels', 'streams', 'users']
    */
-  getUserData = (user, type) => {
+  getUserFromAPI = (user, type) => {
     const base_url = "https://wind-bow.glitch.me/twitch-api/";
     return axios.get(`${base_url}/${type}/${user}`);
   }
