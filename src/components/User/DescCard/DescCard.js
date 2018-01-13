@@ -8,7 +8,7 @@ const descCard = (props) => (
         className="link black dim pointer"
         >{props.display_name}</a></p>
       <p className="ma1 tc i f6">{props.isOnline ? props.game : 'Offline'}</p>
-      <p className="ma0 f7 h-100 overflow-x-auto pa2 tc">{props.status}</p>
+      <p className="ma0 f7 h-100 overflow-y-auto pa2 tc">{props.status}</p>
     </div>
   </div>
 );
