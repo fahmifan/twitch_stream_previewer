@@ -9,10 +9,10 @@ class User extends Component {
     streamData: {},
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const username = this.props.username;
 
-    this.getUserData(username, 'streams')
+    this.getUserfromAPI(username, 'streams')
       .then(res => {
         this.setState({
           streamData: res.data
@@ -20,7 +20,7 @@ class User extends Component {
       })  
   }
 
-  getUserData = (username, type) => {
+  getUserfromAPI = (username, type) => {
     const base_url = "https://wind-bow.glitch.me/twitch-api/";
     return axios.get(`${base_url}/${type}/${username}`);
   }
