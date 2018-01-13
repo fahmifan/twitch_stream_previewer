@@ -19,8 +19,7 @@ class Users extends Component {
     isLoading: true,
   }
 
-  componentWillMount() {
-    this.usersData();
+  componentDidMount() {
   }
 
   usersData = () => {
