@@ -16,7 +16,7 @@ class Users extends Component {
       "noobs2ninjas"
     ],
     usersData: [],
-    isLoading: false,
+    isLoading: true,
   }
 
   componentWillMount() {
