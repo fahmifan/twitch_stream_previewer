@@ -43,17 +43,23 @@ class Users extends Component {
   }
  
   render() {
-    return (
-      <div className="w-70-ns w-100 center h-100 flex flex-column items-center mb4 bg-washed-red">
-      { this.state.usersData.map( (userData, index) => {
+    let userCard = this.state.usersData.map( (userData, index) => {
           return <User
             key={userData._id} 
             displayPic={userData.logo}
             display_name={userData.display_name} 
             username={userData.name}
             url={userData.url} />
-        })
+    });
+    const loadSpinner = <div className="loader mw-50 mt3"></div>
+
+    if(this.state.isLoading) {
+      userCard = loadSpinner;
       }
+
+    return (
+      <div className="w-70-ns w-100 center h-100 flex flex-column items-center mb4 bg-washed-red">
+      { userCard }
       </div>
     );
   }
