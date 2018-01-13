@@ -45,12 +45,16 @@ class Users extends Component {
  
   render() {
     let userCard = this.state.usersData.map( (userData, index) => {
-          return <User
+      return <User
+        key={userData._id} 
             key={userData._id} 
-            displayPic={userData.logo}
+        key={userData._id} 
+        displayPic={userData.logo}
+        display_name={userData.display_name} 
             display_name={userData.display_name} 
-            username={userData.name}
-            url={userData.url} />
+        display_name={userData.display_name} 
+        username={userData.name}
+        url={userData.url} />
     });
     const loadSpinner = <div className="loader mw-50 mt3"></div>
 
