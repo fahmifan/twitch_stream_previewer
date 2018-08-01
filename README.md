@@ -1,4 +1,4 @@
-# FCC Twitch Stream Previewer
+# Twitch Stream Previewer
 
 - [x] I can see whether Free Code Camp is currently streaming on Twitch.tv.
 
